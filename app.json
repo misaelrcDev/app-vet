@@ -37,6 +37,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ababfa39-f943-4f2d-95af-5ce12333f622"
+      }
+    },
+    "owner": "misaelrc.dev"
   }
 }

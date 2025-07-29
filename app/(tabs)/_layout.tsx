@@ -9,7 +9,13 @@ export default function TabLayout() {
         tabBarStyle: Platform.select({
           default: {},
         }),
-      }}
-    />
+      }}>
+      <Tabs.Screen 
+        name="index"
+        options={{ 
+          title: 'Home'
+         }}
+      />
+    </Tabs>
   );
 }
