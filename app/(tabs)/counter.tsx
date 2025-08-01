@@ -23,10 +23,12 @@ export default function Counter() {
       <Text style={styles.text}>{count}</Text>
       <View style={styles.btns}>
         <TouchableOpacity onPress={decrement}>
-          <MaterialIcons name="remove" size={22} color="#000" />
+          {count > 0 && (
+            <MaterialIcons name="remove-circle" size={80} color="red" />
+          )}
         </TouchableOpacity>
         <TouchableOpacity onPress={increment}>
-          <MaterialIcons name="add" size={22} color="#000" />
+          <MaterialIcons name="add-circle" size={80} color="green" />
         </TouchableOpacity>
       </View>
     </View>
@@ -38,13 +40,16 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 50,
     justifyContent: "center",
-    alignItems: "center",
+    // alignItems: "center",
   },
   text: {
-    fontSize: 30,
-    gap: 15,
+    fontSize: 150,
+    alignSelf: "center",
   },
   btns: {
     flexDirection: "row",
+    gap: 50,
+    justifyContent: "space-between",
+    paddingHorizontal: 15,
   },
 });
