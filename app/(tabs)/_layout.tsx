@@ -16,6 +16,18 @@ export default function TabLayout() {
           title: 'Home'
          }}
       />
+      <Tabs.Screen 
+        name="tasks"
+        options={{ 
+          title: 'Tasks'
+         }}
+      />
+      <Tabs.Screen 
+        name="counter"
+        options={{ 
+          title: 'Counter'
+         }}
+      />
     </Tabs>
   );
 }
