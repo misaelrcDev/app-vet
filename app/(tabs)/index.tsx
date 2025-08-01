@@ -4,7 +4,6 @@ import { LinkProps } from "expo-router";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 export default function HomeScreen() {
-
   type AppItem = {
     name: string;
     route: LinkProps["href"];
@@ -16,6 +15,11 @@ export default function HomeScreen() {
       name: "Task Manager",
       route: "/tasks",
       iconName: "check-circle",
+    },
+    {
+      name: "Simple Counter",
+      route: "/counter",
+      iconName: "timer",
     },
   ];
 
