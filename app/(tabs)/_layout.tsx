@@ -21,15 +21,17 @@ export default function TabLayout() {
       <Tabs.Screen 
         name="tasks"
         options={{ 
-          title: 'Tasks',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="check" color={color} />,
+          href: null,
+          // title: 'Tasks',
+          // tabBarIcon: ({ color }) => <FontAwesome size={28} name="check" color={color} />,
          }}
       />
       <Tabs.Screen 
         name="counter"
         options={{ 
-          title: 'Counter',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="hourglass" color={color} />,
+          href: null,
+          // title: 'Counter',
+          // tabBarIcon: ({ color }) => <FontAwesome size={28} name="hourglass" color={color} />,
          }}
       />
     </Tabs>
