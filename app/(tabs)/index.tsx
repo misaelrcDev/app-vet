@@ -21,6 +21,11 @@ export default function HomeScreen() {
       route: "/counter",
       iconName: "timer",
     },
+    {
+      name: "Change Background Color",
+      route: "/changeBackground",
+      iconName: "color-lens",
+    }
   ];
 
   return (

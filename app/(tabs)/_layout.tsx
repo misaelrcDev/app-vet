@@ -34,6 +34,12 @@ export default function TabLayout() {
           // tabBarIcon: ({ color }) => <FontAwesome size={28} name="hourglass" color={color} />,
          }}
       />
+      <Tabs.Screen 
+        name="changeBackground"
+        options={{ 
+          href: null,
+         }}
+      />
     </Tabs>
   );
 }
